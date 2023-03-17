@@ -28,7 +28,6 @@ describe 'Books API' do
 
       expect(book).to have_key(:popularity)
       expect(book[:popularity]).to be_an(String)
-      require 'pry'; binding.pry
       expect(book).to_not have_key(:number_sold)
     end
   end
