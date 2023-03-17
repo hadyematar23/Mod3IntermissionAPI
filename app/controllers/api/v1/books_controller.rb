@@ -1,4 +1,5 @@
 class Api::V1::BooksController < ApplicationController
+  require 'pry'; binding.pry
   def index
     render json: Book.all
   end
